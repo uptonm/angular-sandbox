@@ -1,0 +1,15 @@
+code {
+  background: transparent;
+}
+.offline {
+  color: red;
+}
+.online {
+  color: green;
+}
+.container {
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem 0rem 1rem 0rem;
+}

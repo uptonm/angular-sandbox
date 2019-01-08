@@ -1,0 +1,16 @@
+<div class="container" align="center">
+  <h1 class="display-1">Server List</h1>
+  <hr />
+  <app-server></app-server>
+  <app-server></app-server>
+  <hr />
+  <label class="form">Server Name</label>
+  <input
+    class="form-control"
+    type="text"
+    (input)="onUpdateServerName($event)"
+  />
+  <button class="btn btn-primary" [disabled]="!allowNewServer">
+    Add Server
+  </button>
+</div>

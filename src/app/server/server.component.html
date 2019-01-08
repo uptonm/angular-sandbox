@@ -1,0 +1,14 @@
+<div class="container">
+  <h1 class="display-1" align="center">
+    Server with ID <code>{{ serverId }}</code> is
+    <code [ngClass]="serverStatus ? 'online' : 'offline'">{{
+      getServerStatus()
+    }}</code>
+  </h1>
+  <button
+    [ngClass]="serverStatus ? 'btn btn-danger' : 'btn btn-success'"
+    (click)="setServerStatus()"
+  >
+    {{ serverStatus ? "Take Server Offline" : "Bring Server Online" }}
+  </button>
+</div>
